@@ -1,0 +1,118 @@
+/* Custom Grayscale Theme - Based on 6-shade palette */
+
+:root {
+  /* Grayscale palette from image */
+  --gray-1: #E0E0E0; /* Light gray */
+  --gray-2: #B0B0B0; /* Medium-light gray */
+  --gray-3: #808080; /* Medium gray */
+  --gray-4: #505050; /* Medium-dark gray */
+  --gray-5: #303030; /* Dark gray (almost black) */
+  --gray-6: #000000; /* Solid black */
+}
+
+/* Override Material theme colors with grayscale */
+[data-md-color-scheme="slate"] {
+  /* Background colors - using darker shades */
+  --md-default-bg-color: var(--gray-6);
+  --md-default-bg-color--light: var(--gray-5);
+  --md-default-bg-color--lighter: var(--gray-4);
+  --md-default-bg-color--lightest: var(--gray-3);
+  
+  /* Text colors - using lighter shades */
+  --md-default-fg-color: var(--gray-1);
+  --md-default-fg-color--light: var(--gray-2);
+  --md-default-fg-color--lighter: var(--gray-3);
+  --md-default-fg-color--lightest: var(--gray-4);
+  
+  /* Primary and accent - using medium gray */
+  --md-primary-fg-color: var(--gray-3);
+  --md-primary-fg-color--light: var(--gray-2);
+  --md-primary-fg-color--dark: var(--gray-4);
+  --md-accent-fg-color: var(--gray-2);
+  --md-accent-fg-color--transparent: rgba(176, 176, 176, 0.1);
+  
+  /* Code blocks */
+  --md-code-bg-color: var(--gray-5);
+  --md-code-fg-color: var(--gray-1);
+  
+  /* Admonitions */
+  --md-admonition-bg-color: var(--gray-5);
+  --md-admonition-fg-color: var(--gray-1);
+  
+  /* Navigation */
+  --md-nav-bg-color: var(--gray-6);
+  --md-nav-fg-color: var(--gray-1);
+  
+  /* Tables */
+  --md-table-bg-color: var(--gray-5);
+  --md-table-fg-color: var(--gray-1);
+  --md-table-border-color: var(--gray-4);
+  
+  /* Links */
+  --md-typeset-a-color: var(--gray-2);
+  
+  /* Search */
+  --md-search-bg-color: var(--gray-5);
+  --md-search-fg-color: var(--gray-1);
+  
+  /* Header */
+  --md-header-bg-color: var(--gray-6);
+  --md-header-fg-color: var(--gray-1);
+  
+  /* Footer */
+  --md-footer-bg-color: var(--gray-6);
+  --md-footer-fg-color: var(--gray-2);
+  
+  /* Sidebar */
+  --md-sidebar-bg-color: var(--gray-6);
+}
+
+/* Ensure dark theme is always active */
+[data-md-color-scheme] {
+  color-scheme: dark;
+}
+
+/* Code syntax highlighting - grayscale */
+.highlight .c { color: var(--gray-3); } /* Comment */
+.highlight .k { color: var(--gray-1); } /* Keyword */
+.highlight .s { color: var(--gray-2); } /* String */
+.highlight .n { color: var(--gray-1); } /* Name */
+
+/* Remove any light theme toggle if it appears */
+.md-header__button.md-logo {
+  display: none;
+}
+
+/* Ensure consistent grayscale appearance */
+body {
+  background-color: var(--gray-6);
+  color: var(--gray-1);
+}
+
+/* Adjust contrast for readability */
+.md-typeset {
+  color: var(--gray-1);
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  color: var(--gray-1);
+}
+
+/* Navigation items */
+.md-nav__link {
+  color: var(--gray-2);
+}
+
+.md-nav__link--active {
+  color: var(--gray-1);
+}
+
+.md-nav__link:hover {
+  color: var(--gray-1);
+}
+

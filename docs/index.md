@@ -49,6 +49,16 @@ Learn Python programming from basics to advanced topics, including data science 
 
 - [Python Tutorials](Python/)
 
+### Django
+Build powerful web applications with Django, a high-level Python web framework.
+
+- [Introduction to Django](Django/01_introduction.md)
+- [Setting Up Django](Django/02_setup.md)
+- [Models and Databases](Django/03_models_databases.md)
+- [Views and URLs](Django/04_views_urls.md)
+- [Templates](Django/05_templates.md)
+- [Forms](Django/06_forms.md)
+
 ### SQL
 Master SQL for working with relational databases and managing data effectively.
 
@@ -67,6 +77,7 @@ Master SQL for working with relational databases and managing data effectively.
 4. **Learn Git** - Version control is essential for all developers
 5. **Master SQL** - Understand how to work with databases
 6. **Explore Python** - Build backend applications and data analysis
+7. **Build with Django** - Create full-featured web applications
 
 ## Learning Path
 
@@ -78,5 +89,6 @@ For beginners, we recommend this learning order:
 4. Git → Version control your projects
 5. SQL → Work with databases
 6. Python → Build backend services
+7. Django → Create full-featured web applications
 
 Happy learning!

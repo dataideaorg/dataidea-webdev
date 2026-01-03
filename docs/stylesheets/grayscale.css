@@ -1,0 +1,230 @@
+/* Custom Grayscale Theme - Based on 6-shade palette */
+
+:root {
+  /* Grayscale palette from image */
+  --gray-1: #E0E0E0; /* Light gray */
+  --gray-2: #B0B0B0; /* Medium-light gray */
+  --gray-3: #808080; /* Medium gray */
+  --gray-4: #505050; /* Medium-dark gray */
+  --gray-5: #303030; /* Dark gray (almost black) */
+  --gray-6: #000000; /* Solid black */
+}
+
+/* Override Material theme colors with grayscale */
+[data-md-color-scheme="slate"] {
+  /* Background colors - using custom dark gray */
+  --md-default-bg-color: #1a1a1a;
+  --md-default-bg-color--light: #252525;
+  --md-default-bg-color--lighter: #303030;
+  --md-default-bg-color--lightest: #404040;
+  
+  /* Text colors - using custom light gray */
+  --md-default-fg-color: #e5e5e5;
+  --md-default-fg-color--light: #d0d0d0;
+  --md-default-fg-color--lighter: #b0b0b0;
+  --md-default-fg-color--lightest: #808080;
+  
+  /* Primary and accent - using medium gray */
+  --md-primary-fg-color: var(--gray-3);
+  --md-primary-fg-color--light: var(--gray-2);
+  --md-primary-fg-color--dark: var(--gray-4);
+  --md-accent-fg-color: var(--gray-2);
+  --md-accent-fg-color--transparent: rgba(176, 176, 176, 0.1);
+  
+  /* Code blocks */
+  --md-code-bg-color: var(--gray-5);
+  --md-code-fg-color: var(--gray-1);
+  
+  /* Admonitions */
+  --md-admonition-bg-color: var(--gray-5);
+  --md-admonition-fg-color: var(--gray-1);
+  
+  /* Navigation */
+  --md-nav-bg-color: #0f0f0f;
+  --md-nav-fg-color: #e5e5e5;
+  
+  /* Tables */
+  --md-table-bg-color: var(--gray-5);
+  --md-table-fg-color: var(--gray-1);
+  --md-table-border-color: var(--gray-4);
+  
+  /* Links */
+  --md-typeset-a-color: var(--gray-2);
+  
+  /* Search */
+  --md-search-bg-color: var(--gray-5);
+  --md-search-fg-color: var(--gray-1);
+  
+  /* Header */
+  --md-header-bg-color: #1a1a1a;
+  --md-header-fg-color: #e5e5e5;
+  
+  /* Footer */
+  --md-footer-bg-color: var(--gray-6);
+  --md-footer-fg-color: var(--gray-2);
+  
+  /* Sidebar */
+  --md-sidebar-bg-color: #0f0f0f;
+  
+  /* Navigation tabs */
+  --md-nav-tabs-bg-color: #0f0f0f;
+  --md-nav-tabs-fg-color: #e5e5e5;
+}
+
+/* Ensure dark theme is always active */
+[data-md-color-scheme] {
+  color-scheme: dark;
+}
+
+/* Code syntax highlighting - grayscale */
+.highlight .c { color: var(--gray-3); } /* Comment */
+.highlight .k { color: var(--gray-1); } /* Keyword */
+.highlight .s { color: var(--gray-2); } /* String */
+.highlight .n { color: var(--gray-1); } /* Name */
+
+/* Remove any light theme toggle if it appears */
+.md-header__button.md-logo {
+  display: none;
+}
+
+/* Ensure consistent grayscale appearance */
+body {
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+}
+
+/* Adjust contrast for readability */
+.md-typeset {
+  color: #e5e5e5;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  color: #e5e5e5;
+}
+
+/* Navigation items */
+.md-nav__link {
+  color: #d0d0d0;
+}
+
+.md-nav__link--active {
+  color: #e5e5e5;
+}
+
+.md-nav__link:hover {
+  color: #e5e5e5;
+}
+
+/* Navbar/Header specific styling */
+.md-header {
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+}
+
+.md-header__title {
+  color: #e5e5e5;
+}
+
+.md-header__button {
+  color: #e5e5e5;
+}
+
+.md-header__button:hover {
+  color: #ffffff;
+}
+
+/* Navigation sidebar - make very dark */
+.md-nav {
+  background-color: #0f0f0f;
+}
+
+.md-nav__title {
+  background-color: #0f0f0f;
+  color: #e5e5e5;
+}
+
+.md-nav__list {
+  background-color: #0f0f0f;
+}
+
+/* Navigation tabs - Main navbar menu items */
+.md-tabs {
+  background-color: #0f0f0f;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.md-tabs__list {
+  background-color: #0f0f0f;
+}
+
+.md-tabs__item {
+  background-color: #0f0f0f;
+}
+
+.md-tabs__link {
+  background-color: #0f0f0f;
+  color: #e5e5e5;
+}
+
+.md-tabs__link:hover {
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+}
+
+.md-tabs__link--active {
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+  border-bottom-color: #e5e5e5;
+}
+
+/* Navigation tabs - sidebar navigation */
+.md-nav__tabs {
+  background-color: #0f0f0f;
+  border-bottom-color: #1a1a1a;
+}
+
+.md-nav__tabs-item {
+  background-color: #0f0f0f;
+}
+
+.md-nav__tabs-item--active {
+  background-color: #1a1a1a;
+  border-bottom-color: #e5e5e5;
+}
+
+/* Navigation sections */
+.md-nav__section {
+  background-color: #0f0f0f;
+}
+
+.md-nav__item {
+  background-color: #0f0f0f;
+}
+
+.md-nav__item--nested > .md-nav__link {
+  background-color: #0f0f0f;
+}
+
+/* Ensure tabs navigation area has dark background */
+.md-header__inner {
+  background-color: #1a1a1a;
+}
+
+.md-header__source {
+  background-color: #1a1a1a;
+}
+
+/* Tabs container - the horizontal menu bar */
+.md-tabs__inner {
+  background-color: #0f0f0f;
+}
+
+.md-tabs__container {
+  background-color: #0f0f0f;
+}
+

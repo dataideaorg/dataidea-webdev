@@ -1,22 +1,15 @@
-site_name: Web Development Tutorials
+site_name: DATAIDEA
+site_url: https://web.dataidea.org/
+site_author: Juma Shafara
+site_description: DATAIDEA SCIENCE - Learn Programming for Data Science 
 
 theme:
   name: material
   palette:
-    # Light mode
-    - scheme: default
-      primary: blue
-      accent: blue
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    # Dark mode
+    # Dark grayscale theme only
     - scheme: slate
-      primary: blue
-      accent: blue
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+      primary: grey
+      accent: grey
   features:
     - navigation.tabs
     - navigation.sections
@@ -25,6 +18,10 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+  custom_dir: docs/overrides
+
+extra_css:
+  - stylesheets/grayscale.css
 
 nav:
   - Home: index.md
@@ -57,6 +54,13 @@ nav:
     - JavaScript/05_dom_manipulation.md
     - JavaScript/06_events.md
   - Python: Python/
+  - Django:
+    - Django/01_introduction.md
+    - Django/02_setup.md
+    - Django/03_models_databases.md
+    - Django/04_views_urls.md
+    - Django/05_templates.md
+    - Django/06_forms.md
   - SQL:
     - SQL/01_introduction.md
     - SQL/02_basic_queries.md
