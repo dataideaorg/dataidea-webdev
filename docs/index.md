@@ -1,94 +1,320 @@
-# Web Development Tutorials
+---
+hide:
+  - navigation
+  - toc
+---
 
-Welcome to comprehensive tutorials for fullstack web development! This documentation covers essential technologies and tools you need to build modern web applications.
+<style>
+/* Page container */
+.md-typeset {
+  max-width: 1200px;
+}
 
-## Available Tutorials
+/* Hero section */
+.hero-section {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #303030;
+}
 
-### Git
-Learn version control with Git and GitHub - essential skills for modern software development.
+.hero-section h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #e5e5e5;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
 
-- [Introduction to Git and GitHub](Git/01_introduction.md)
-- [Basic Git Commands](Git/02_basic_commands.md)
-- [Branching and Merging](Git/03_branching.md)
-- [GitHub Basics](Git/04_github.md)
-- [Collaboration Workflows](Git/05_collaboration.md)
-- [Advanced Git Topics](Git/06_advanced.md)
+.hero-section p {
+  font-size: 1rem;
+  color: #b0b0b0;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
 
-### HTML
-Master the foundation of web development - HTML (HyperText Markup Language).
+/* Section titles */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e5e5e5;
+  margin: 2rem 0 1.5rem;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
 
-- [Introduction to HTML](HTML/01_introduction.md)
-- [Basic HTML Structure](HTML/02_basic_structure.md)
-- [Text Formatting and Headings](HTML/03_text_formatting.md)
-- [Links and Images](HTML/04_links_and_images.md)
-- [Lists and Tables](HTML/05_lists_and_tables.md)
-- [Forms](HTML/06_forms.md)
+/* Course grid */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem auto 3rem;
+  padding: 0 1rem;
+  max-width: 1400px;
+}
 
-### CSS
-Learn to style and design beautiful websites with CSS (Cascading Style Sheets).
+/* Course cards - clean and minimal */
+.course-card {
+  background: linear-gradient(135deg, #242424 0%, #1c1c1c 100%);
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 1.5rem 1.25rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
 
-- [Introduction to CSS](CSS/01_introduction.md)
-- [CSS Syntax and Selectors](CSS/02_syntax_and_selectors.md)
-- [Colors, Text, and Fonts](CSS/03_colors_text_fonts.md)
-- [Box Model and Layout](CSS/04_box_model_layout.md)
-- [Flexbox](CSS/05_flexbox.md)
-- [Responsive Design](CSS/06_responsive_design.md)
+.course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  border-color: #3a3a3a;
+}
 
-### JavaScript
-Add interactivity and dynamic behavior to your websites with JavaScript.
+/* Card title */
+.course-card h3 {
+  margin: 0 0 0.75rem 0;
+  color: #e5e5e5;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
 
-- [Introduction to JavaScript](JavaScript/01_introduction.md)
-- [Variables and Data Types](JavaScript/02_variables_data_types.md)
-- [Functions and Scope](JavaScript/03_functions_scope.md)
-- [Control Flow](JavaScript/04_control_flow.md)
-- [DOM Manipulation](JavaScript/05_dom_manipulation.md)
-- [Events and Interactivity](JavaScript/06_events.md)
+/* Card description */
+.course-card p {
+  color: #a0a0a0;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  max-width: 95%;
+}
 
-### Python
-Learn Python programming from basics to advanced topics, including data science libraries.
+/* Course meta badge */
+.course-meta {
+  color: #808080;
+  font-size: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding: 0.35rem 0.85rem;
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  border: 1px solid #282828;
+  display: inline-block;
+  font-weight: 500;
+}
 
-- [Python Tutorials](Python/)
+/* Buttons */
+.course-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  width: 100%;
+}
 
-### Django
-Build powerful web applications with Django, a high-level Python web framework.
+.course-btn {
+  width: 100%;
+  padding: 0.65rem 1.25rem;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  border: 1.5px solid;
+  display: inline-block;
+  letter-spacing: 0.3px;
+  color: inherit;
+}
 
-- [Introduction to Django](Django/01_introduction.md)
-- [Setting Up Django](Django/02_setup.md)
-- [Models and Databases](Django/03_models_databases.md)
-- [Views and URLs](Django/04_views_urls.md)
-- [Templates](Django/05_templates.md)
-- [Forms](Django/06_forms.md)
+.course-btn:link,
+.course-btn:visited,
+.course-btn:hover,
+.course-btn:active {
+  color: inherit;
+  text-decoration: none;
+}
 
-### SQL
-Master SQL for working with relational databases and managing data effectively.
+.course-btn-primary {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
+}
 
-- [Introduction to SQL](SQL/01_introduction.md)
-- [Basic SQL Queries](SQL/02_basic_queries.md)
-- [Filtering Data](SQL/03_filtering.md)
-- [Aggregate Functions](SQL/04_aggregate_functions.md)
-- [Joins](SQL/05_joins.md)
-- [Subqueries](SQL/06_subqueries.md)
+.course-btn-primary:hover {
+  background-color: #f0f0f0;
+  border-color: #f0f0f0;
+  color: #000000;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+}
 
-## Getting Started
+.course-btn-secondary {
+  background-color: transparent;
+  border-color: #505050;
+  color: #ffffff;
+}
 
-1. **Start with HTML** - Learn the structure of web pages
-2. **Style with CSS** - Make your pages beautiful and responsive
-3. **Add JavaScript** - Make your pages interactive and dynamic
-4. **Learn Git** - Version control is essential for all developers
-5. **Master SQL** - Understand how to work with databases
-6. **Explore Python** - Build backend applications and data analysis
-7. **Build with Django** - Create full-featured web applications
+.course-btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: #606060;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
 
-## Learning Path
+/* Section headers */
+.md-typeset h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  color: #e5e5e5;
+  letter-spacing: -0.02em;
+  border-bottom: 2px solid #353535;
+  padding-bottom: 0.75rem;
+}
 
-For beginners, we recommend this learning order:
+/* Learning path section */
+.md-typeset h2 + ol,
+.md-typeset h2 + ul {
+  background: linear-gradient(135deg, #252525 0%, #1f1f1f 100%);
+  border: 1px solid #353535;
+  border-radius: 8px;
+  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+  margin: 1.5rem 0;
+}
 
-1. HTML → Build your first web pages
-2. CSS → Style your pages beautifully
-3. JavaScript → Add interactivity and dynamic behavior
-4. Git → Version control your projects
-5. SQL → Work with databases
-6. Python → Build backend services
-7. Django → Create full-featured web applications
+.md-typeset h2 + ol li,
+.md-typeset h2 + ul li {
+  margin-bottom: 0.75rem;
+  color: #d0d0d0;
+  line-height: 1.6;
+}
 
-Happy learning!
+.md-typeset h2 + ol li:last-child,
+.md-typeset h2 + ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-section p {
+    font-size: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .course-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  .course-card {
+    padding: 1.25rem 1rem;
+  }
+  
+  .course-card h3 {
+    font-size: 1.15rem;
+  }
+  
+  .course-card p {
+    font-size: 0.8rem;
+  }
+}
+</style>
+
+<div class="hero-section">
+<h1>Web Development Tutorials</h1>
+<p>Welcome to comprehensive tutorials for fullstack web development! This documentation covers essential technologies and tools you need to build modern web applications.</p>
+</div>
+
+<h2 class="section-title">Available Courses</h2>
+
+<div class="course-grid">
+
+<div class="course-card">
+<h3>Git</h3>
+<p>Learn version control with Git and GitHub - essential skills for modern software development.</p>
+<div class="course-meta">6 comprehensive tutorials</div>
+<div class="course-buttons">
+<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
+<a href="Git/01_introduction.md" class="course-btn course-btn-secondary">Start Learning</a>
+</div>
+</div>
+
+<div class="course-card">
+<h3>HTML</h3>
+<p>Master the foundation of web development - HTML (HyperText Markup Language).</p>
+<div class="course-meta">6 comprehensive tutorials</div>
+<div class="course-buttons">
+<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
+<a href="HTML/01_introduction.md" class="course-btn course-btn-secondary">Start Learning</a>
+</div>
+</div>
+
+<div class="course-card">
+<h3>CSS</h3>
+<p>Learn to style and design beautiful websites with CSS (Cascading Style Sheets).</p>
+<div class="course-meta">6 comprehensive tutorials</div>
+<div class="course-buttons">
+<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
+<a href="CSS/01_introduction.md" class="course-btn course-btn-secondary">Start Learning</a>
+</div>
+</div>
+
+<div class="course-card">
+<h3>JavaScript</h3>
+<p>Add interactivity and dynamic behavior to your websites with JavaScript.</p>
+<div class="course-meta">6 comprehensive tutorials</div>
+<div class="course-buttons">
+<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
+<a href="JavaScript/01_introduction.md" class="course-btn course-btn-secondary">Start Learning</a>
+</div>
+</div>
+
+<div class="course-card">
+<h3>Python</h3>
+<p>Learn Python programming from basics to advanced topics, including data science libraries.</p>
+<div class="course-meta">Comprehensive tutorial series</div>
+<div class="course-buttons">
+<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
+<a href="Python/" class="course-btn course-btn-secondary">Start Learning</a>
+</div>
+</div>
+
+<div class="course-card">
+<h3>Django</h3>
+<p>Build powerful web applications with Django, a high-level Python web framework.</p>
+<div class="course-meta">6 comprehensive tutorials</div>
+<div class="course-buttons">
+<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
+<a href="Django/01_introduction.md" class="course-btn course-btn-secondary">Start Learning</a>
+</div>
+</div>
+
+<div class="course-card">
+<h3>SQL</h3>
+<p>Master SQL for working with relational databases and managing data effectively.</p>
+<div class="course-meta">6 comprehensive tutorials</div>
+<div class="course-buttons">
+<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
+<a href="SQL/01_introduction.md" class="course-btn course-btn-secondary">Start Learning</a>
+</div>
+</div>
+
+</div>
