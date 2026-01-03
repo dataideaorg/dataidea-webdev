@@ -24,6 +24,16 @@ Master the foundation of web development - HTML (HyperText Markup Language).
 - [Lists and Tables](HTML/05_lists_and_tables.md)
 - [Forms](HTML/06_forms.md)
 
+### CSS
+Learn to style and design beautiful websites with CSS (Cascading Style Sheets).
+
+- [Introduction to CSS](CSS/01_introduction.md)
+- [CSS Syntax and Selectors](CSS/02_syntax_and_selectors.md)
+- [Colors, Text, and Fonts](CSS/03_colors_text_fonts.md)
+- [Box Model and Layout](CSS/04_box_model_layout.md)
+- [Flexbox](CSS/05_flexbox.md)
+- [Responsive Design](CSS/06_responsive_design.md)
+
 ### Python
 Learn Python programming from basics to advanced topics, including data science libraries.
 
@@ -42,16 +52,17 @@ Master SQL for working with relational databases and managing data effectively.
 ## Getting Started
 
 1. **Start with HTML** - Learn the structure of web pages
-2. **Learn Git** - Version control is essential for all developers
-3. **Master SQL** - Understand how to work with databases
-4. **Explore Python** - Build backend applications and data analysis
+2. **Style with CSS** - Make your pages beautiful and responsive
+3. **Learn Git** - Version control is essential for all developers
+4. **Master SQL** - Understand how to work with databases
+5. **Explore Python** - Build backend applications and data analysis
 
 ## Learning Path
 
 For beginners, we recommend this learning order:
 
 1. HTML → Build your first web pages
-2. CSS → Style your pages (coming soon)
+2. CSS → Style your pages beautifully
 3. JavaScript → Add interactivity (coming soon)
 4. Git → Version control your projects
 5. SQL → Work with databases

@@ -42,6 +42,13 @@ nav:
     - HTML/04_links_and_images.md
     - HTML/05_lists_and_tables.md
     - HTML/06_forms.md
+  - CSS:
+    - CSS/01_introduction.md
+    - CSS/02_syntax_and_selectors.md
+    - CSS/03_colors_text_fonts.md
+    - CSS/04_box_model_layout.md
+    - CSS/05_flexbox.md
+    - CSS/06_responsive_design.md
   - Python: Python/
   - SQL:
     - SQL/01_introduction.md
