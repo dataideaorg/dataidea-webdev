@@ -1,5 +1,8 @@
 /* Custom Grayscale Theme - Based on 6-shade palette */
 
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
 :root {
   /* Grayscale palette from image */
   --gray-1: #E0E0E0; /* Light gray */
@@ -91,43 +94,84 @@
 body {
   background-color: #1a1a1a;
   color: #e5e5e5;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* Adjust contrast for readability */
 .md-typeset {
   color: #e5e5e5;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
+/* High-level headings - DM Serif Display */
 .md-typeset h1,
-.md-typeset h2,
+.md-typeset h2 {
+  color: #e5e5e5;
+  font-family: 'DM Serif Display', Georgia, serif;
+}
+
+/* Small headings and normal text - DM Sans */
 .md-typeset h3,
 .md-typeset h4,
 .md-typeset h5,
 .md-typeset h6 {
   color: #e5e5e5;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Paragraphs and body text - DM Sans */
+.md-typeset p,
+.md-typeset li,
+.md-typeset td,
+.md-typeset th {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Code - DM Mono */
+code,
+pre,
+.highlight,
+.md-typeset code,
+.md-typeset pre {
+  font-family: 'DM Mono', 'Courier New', Courier, monospace;
+}
+
+/* Inline code */
+.md-typeset code:not(pre code) {
+  font-family: 'DM Mono', 'Courier New', Courier, monospace;
+}
+
+/* Code blocks */
+.md-typeset pre code {
+  font-family: 'DM Mono', 'Courier New', Courier, monospace;
 }
 
 /* Navigation items */
 .md-nav__link {
   color: #d0d0d0;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .md-nav__link--active {
   color: #e5e5e5;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .md-nav__link:hover {
   color: #e5e5e5;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* Navbar/Header specific styling */
 .md-header {
   background-color: #1a1a1a;
   color: #e5e5e5;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .md-header__title {
   color: #e5e5e5;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .md-header__button {
@@ -169,17 +213,20 @@ body {
 .md-tabs__link {
   background-color: #0f0f0f;
   color: #e5e5e5;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .md-tabs__link:hover {
   background-color: #1a1a1a;
   color: #e5e5e5;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .md-tabs__link--active {
   background-color: #1a1a1a;
   color: #e5e5e5;
   border-bottom-color: #e5e5e5;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* Navigation tabs - sidebar navigation */
