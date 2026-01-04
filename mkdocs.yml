@@ -3,6 +3,12 @@ site_url: https://web.dataidea.org/
 site_author: Juma Shafara
 site_description: DATAIDEA SCIENCE - Learn Programming for Data Science 
 
+plugins:
+  - search
+  - mkdocs-jupyter:
+      execute: false
+      include_source: true
+
 theme:
   name: material
   palette:
@@ -25,13 +31,6 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Git:
-    - Git/01_introduction.md
-    - Git/02_basic_commands.md
-    - Git/03_branching.md
-    - Git/04_github.md
-    - Git/05_collaboration.md
-    - Git/06_advanced.md
   - HTML:
     - HTML/01_introduction.md
     - HTML/02_basic_structure.md
@@ -53,14 +52,13 @@ nav:
     - JavaScript/04_control_flow.md
     - JavaScript/05_dom_manipulation.md
     - JavaScript/06_events.md
-  - Python: Python/
-  - Django:
-    - Django/01_introduction.md
-    - Django/02_setup.md
-    - Django/03_models_databases.md
-    - Django/04_views_urls.md
-    - Django/05_templates.md
-    - Django/06_forms.md
+  - Git:
+    - Git/01_introduction.md
+    - Git/02_basic_commands.md
+    - Git/03_branching.md
+    - Git/04_github.md
+    - Git/05_collaboration.md
+    - Git/06_advanced.md
   - SQL:
     - SQL/01_introduction.md
     - SQL/02_basic_queries.md
@@ -68,3 +66,35 @@ nav:
     - SQL/04_aggregate_functions.md
     - SQL/05_joins.md
     - SQL/06_subqueries.md
+  - Python:
+    - Python/index.md
+    - Python/11_python_tutorial.ipynb
+    - Basics:
+      - Python/Basics/00_python_programming_outline.ipynb
+      - Python/Basics/01_basics.ipynb
+      - Python/Basics/02_variables.ipynb
+      - Python/Basics/03_numbers.ipynb
+      - Python/Basics/03_strings.ipynb
+      - Python/Basics/04_operators.ipynb
+      - Python/Basics/05_containers.ipynb
+      - Python/Basics/06_flow_control.ipynb
+      - Python/Basics/07_advanced.ipynb
+      - Python/Basics/08_modules.ipynb
+      - Python/Basics/09_file_handling.ipynb
+      - Python/Basics/13_end_of_course_exercise.ipynb
+    - Exercises:
+      - Python/Exercises/02_basics_exercise.ipynb
+      - Python/Exercises/11_python_objective_quiz.ipynb
+      - Python/Exercises/12_true_or_false_quiz.ipynb
+      - Python/Exercises/13_end_of_course_exercise.ipynb
+    - Python Builtin:
+      - Python/Python Builtin/filter_function.md
+      - Python/Python Builtin/map_function.md
+      - Python/Python Builtin/reduce_function.md
+  - Django:
+    - Django/01_introduction.md
+    - Django/02_setup.md
+    - Django/03_models_databases.md
+    - Django/04_views_urls.md
+    - Django/05_templates.md
+    - Django/06_forms.md

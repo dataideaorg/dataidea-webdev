@@ -253,7 +253,7 @@ hide:
 <div class="course-meta">6 comprehensive tutorials</div>
 <div class="course-buttons">
 <a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
-<a href="HTML/01_introduction.md" class="course-btn course-btn-secondary">Start Learning</a>
+<a href="HTML/01_introduction/" class="course-btn course-btn-secondary">Start Learning</a>
 </div>
 </div>
 
@@ -263,7 +263,7 @@ hide:
 <div class="course-meta">6 comprehensive tutorials</div>
 <div class="course-buttons">
 <a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
-<a href="CSS/01_introduction.md" class="course-btn course-btn-secondary">Start Learning</a>
+<a href="CSS/01_introduction/" class="course-btn course-btn-secondary">Start Learning</a>
 </div>
 </div>
 
@@ -273,7 +273,7 @@ hide:
 <div class="course-meta">6 comprehensive tutorials</div>
 <div class="course-buttons">
 <a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
-<a href="JavaScript/01_introduction.md" class="course-btn course-btn-secondary">Start Learning</a>
+<a href="JavaScript/01_introduction/" class="course-btn course-btn-secondary">Start Learning</a>
 </div>
 </div>
 
@@ -283,7 +283,7 @@ hide:
 <div class="course-meta">6 comprehensive tutorials</div>
 <div class="course-buttons">
 <a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
-<a href="Git/01_introduction.md" class="course-btn course-btn-secondary">Start Learning</a>
+<a href="Git/01_introduction/" class="course-btn course-btn-secondary">Start Learning</a>
 </div>
 </div>
 
@@ -293,7 +293,7 @@ hide:
 <div class="course-meta">6 comprehensive tutorials</div>
 <div class="course-buttons">
 <a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
-<a href="SQL/01_introduction.md" class="course-btn course-btn-secondary">Start Learning</a>
+<a href="SQL/01_introduction/" class="course-btn course-btn-secondary">Start Learning</a>
 </div>
 </div>
 
@@ -313,7 +313,7 @@ hide:
 <div class="course-meta">6 comprehensive tutorials</div>
 <div class="course-buttons">
 <a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
-<a href="Django/01_introduction.md" class="course-btn course-btn-secondary">Start Learning</a>
+<a href="Django/01_introduction/" class="course-btn course-btn-secondary">Start Learning</a>
 </div>
 </div>
 
