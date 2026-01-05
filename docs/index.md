@@ -141,7 +141,7 @@ hide:
 .course-btn-primary {
   background-color: #ffffff;
   border-color: #ffffff;
-  color: #000000;
+  color: black;
 }
 
 .course-btn-primary:hover {
@@ -252,7 +252,7 @@ hide:
 <p>Master the foundation of web development - HTML (HyperText Markup Language).</p>
 <div class="course-meta">6 comprehensive tutorials</div>
 <div class="course-buttons">
-<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
+<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary" style="color: black">Enroll Now</a>
 <a href="HTML/01_introduction/" class="course-btn course-btn-secondary">Start Learning</a>
 </div>
 </div>
@@ -262,7 +262,7 @@ hide:
 <p>Learn to style and design beautiful websites with CSS (Cascading Style Sheets).</p>
 <div class="course-meta">6 comprehensive tutorials</div>
 <div class="course-buttons">
-<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
+<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary" style="color: black">Enroll Now</a>
 <a href="CSS/01_introduction/" class="course-btn course-btn-secondary">Start Learning</a>
 </div>
 </div>
@@ -272,7 +272,7 @@ hide:
 <p>Add interactivity and dynamic behavior to your websites with JavaScript.</p>
 <div class="course-meta">6 comprehensive tutorials</div>
 <div class="course-buttons">
-<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
+<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary" style="color: black" >Enroll Now</a>
 <a href="JavaScript/01_introduction/" class="course-btn course-btn-secondary">Start Learning</a>
 </div>
 </div>
@@ -282,7 +282,7 @@ hide:
 <p>Learn version control with Git and GitHub - essential skills for modern software development.</p>
 <div class="course-meta">6 comprehensive tutorials</div>
 <div class="course-buttons">
-<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
+<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary" style="color: black">Enroll Now</a>
 <a href="Git/01_introduction/" class="course-btn course-btn-secondary">Start Learning</a>
 </div>
 </div>
@@ -292,7 +292,7 @@ hide:
 <p>Master SQL for working with relational databases and managing data effectively.</p>
 <div class="course-meta">6 comprehensive tutorials</div>
 <div class="course-buttons">
-<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
+<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary" style="color: black">Enroll Now</a>
 <a href="SQL/01_introduction/" class="course-btn course-btn-secondary">Start Learning</a>
 </div>
 </div>
@@ -302,7 +302,7 @@ hide:
 <p>Learn Python programming from basics to advanced topics, including data science libraries.</p>
 <div class="course-meta">Comprehensive tutorial series</div>
 <div class="course-buttons">
-<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
+<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary" style="color: black">Enroll Now</a>
 <a href="Python/" class="course-btn course-btn-secondary">Start Learning</a>
 </div>
 </div>
@@ -312,7 +312,7 @@ hide:
 <p>Build powerful web applications with Django, a high-level Python web framework.</p>
 <div class="course-meta">6 comprehensive tutorials</div>
 <div class="course-buttons">
-<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary">Enroll Now</a>
+<a href="https://forms.gle/CPL4Rs2pmuR4yToKA" target="_blank" class="course-btn course-btn-primary" style="color: black">Enroll Now</a>
 <a href="Django/01_introduction/" class="course-btn course-btn-secondary">Start Learning</a>
 </div>
 </div>
